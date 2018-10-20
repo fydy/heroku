@@ -10,6 +10,7 @@ script:
   - composer update
  
 after_success:
+  - git checkout source
   - git add --all .
   - git commit -m "Travis CI Auto Builder"
   - git push --quiet --force https://$heroku@github.com/fydy/heroku-wp.git source
