@@ -9,7 +9,7 @@ before_script:
 script:
   - composer update
  
- after_success:
+after_success:
 - git init
 - git add --all .
 - git commit -m "Travis CI Auto Builder"
