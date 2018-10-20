@@ -47,7 +47,7 @@
         },
         {
             "type": "vcs",
-            "url": "https://github.com/xyu/batcache"
+            "url": "https://github.com/fydy/batcache"
         },
         {
             "type": "composer",
