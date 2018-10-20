@@ -8,10 +8,7 @@ script:
   - composer update --ignore-platform-reqs
  
 after_success:
-  - rm -rf .git
-  - git init
-  - git remote add origin git@github.com:fydy/heroku-wp.git
-  - git checkout source
   - git add --all .
   - git commit -m "Travis CI Auto Builder"
+  - git checkout source
   - git push --quiet --force https://$heroku@github.com/fydy/heroku-wp.git source
