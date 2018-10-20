@@ -4,7 +4,7 @@ php:
   - 7.2
   
 script:
-  - composer update
+  - composer update --ignore-platform-reqs
  
 after_success:
   - rm -rf .git
