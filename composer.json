@@ -22,8 +22,9 @@
         "wpackagist-plugin/secure-db-connection": "~1",
 
         "humanmade/s3-uploads": "~1",
-        "wpackagist-plugin/jetpack": "*",
         "wpackagist-plugin/sendgrid-email-delivery-simplified": "~1",
+        "wpackagist-plugin/useso-take-over-google": "1.8",
+        "wpackagist-plugin/remove-google-fonts-references": "2.6",
 
         "predis/predis": "~1.0",
         "wp-cli/wp-cli": "^1.0"
