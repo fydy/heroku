@@ -74,5 +74,8 @@
         "post-install-cmd": [
             "./support/app_slug_compile.sh"
         ]
+    },
+    "config": {
+        "secure-http": false
     }
 }
