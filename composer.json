@@ -27,6 +27,7 @@
         "wpackagist-plugin/remove-google-fonts-references": "2.6",
         "wpackagist-plugin/cloudinary-image-management-and-manipulation-in-the-cloud-cdn": "1.1.10",
 		"wpackagist-plugin/cloudflare": "3.3.2",
+		"wpackagist-plugin/wp-postviews": "1.75",
 		
 
         "predis/predis": "~1.0",
