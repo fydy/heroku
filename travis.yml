@@ -4,6 +4,5 @@ php:
   - 7.0
   
 script:
-  - composer config -g github-oauth.github.com $composer
   - composer config secure-http false
   - composer update --ignore-platform-reqs
