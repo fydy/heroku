@@ -4,6 +4,7 @@ php:
   - 7.2
   
 script:
+  - composer config github-oauth.github.com ${CO_TOKEN}
   - composer config secure-http false
   - composer update --ignore-platform-reqs
  
