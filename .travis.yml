@@ -15,12 +15,12 @@ after_success:
   - wget http://dev-yunc.pantheonsite.io/Impreza.zip
   - wget http://dev-yunc.pantheonsite.io/lawyer-by-osetin.zip
   - wget http://dev-yunc.pantheonsite.io/Newspaper.zip
-  - unzip Avada.zip public/wp-content/themes
-  - unzip Impreza.zip public/wp-content/themes
-  - unzip lawyer-by-osetin.zip public/wp-content/themes
-  - unzip Newspaper.zip public/wp-content/themes
-  - unzip businesslounge.zip public/wp-content/themes
-  - unzip waspthemes-yellow-pencil.zip public/wp-content/plugins
+  - unzip Avada.zip -d public/wp-content/themes
+  - unzip Impreza.zip -d public/wp-content/themes
+  - unzip lawyer-by-osetin.zip -d public/wp-content/themes
+  - unzip Newspaper.zip -d public/wp-content/themes
+  - unzip businesslounge.zip -d public/wp-content/themes
+  - unzip waspthemes-yellow-pencil.zip -d public/wp-content/plugins
   - rm -rf waspthemes-yellow-pencil.zip
   - rm -rf businesslounge.zip
   - rm -rf Avada.zip
