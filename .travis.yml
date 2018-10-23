@@ -11,6 +11,6 @@ after_success:
   - git add --all .
   - git commit -m "Travis CI Auto Builder"
   - git checkout -b source
-  - git push --quiet --force https://$heroku-wordpress@github.com/fydy/heroku.git source
+  - git push --quiet --force https://$wordpress@github.com/fydy/heroku.git source
   - git checkout -b heroku
-  - git push --quiet --force https://$heroku-wordpress@github.com/fydy/heroku.git heroku
+  - git push --quiet --force https://$wordpress@github.com/fydy/heroku.git heroku
