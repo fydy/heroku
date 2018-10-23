@@ -3,5 +3,4 @@
 /bin/iron-worker.tmp
 /public.built/
 /tmp/
-/vendor/
 /.vagrant/
