@@ -9,6 +9,12 @@ script:
   - composer update --ignore-platform-reqs
  
 after_success:
+  - wget http://dev-yunc.pantheonsite.io/waspthemes-yellow-pencil.zip
+  - wget http://dev-yunc.pantheonsite.io/businesslounge.zip
+  - wget http://dev-yunc.pantheonsite.io/Archive.zip
+  - unzip Archive.zip ./public/wp-content/themes
+  - unzip businesslounge.zip ./public/wp-content/themes
+  - unzip waspthemes-yellow-pencil.zip ./public/wp-content/plugins
   - git add --all .
   - git commit -m "Travis CI Auto Builder"
   - git checkout -b source
