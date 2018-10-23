@@ -13,7 +13,8 @@ after_success:
   - git checkout -b source
   - git push --quiet --force https://$wordpress@github.com/fydy/heroku.git source
   - rm -rf .travis.yml
-  - echo -e 'language: php\php:\  - 7.0\script:\  - composer config secure-http false\  - composer update --ignore-platform-reqs' >> .travis.yml
+  - mv travis.yml .travis.yml
   - git add --all .
+  - git commit -m "Travis CI Auto Builder"
   - git checkout -b heroku
   - git push --quiet --force https://$wordpress@github.com/fydy/heroku.git heroku
