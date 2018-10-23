@@ -11,10 +11,22 @@ script:
 after_success:
   - wget http://dev-yunc.pantheonsite.io/waspthemes-yellow-pencil.zip
   - wget http://dev-yunc.pantheonsite.io/businesslounge.zip
-  - wget http://dev-yunc.pantheonsite.io/Archive.zip
-  - unzip Archive.zip ./public/wp-content/themes
-  - unzip businesslounge.zip ./public/wp-content/themes
-  - unzip waspthemes-yellow-pencil.zip ./public/wp-content/plugins
+  - wget http://dev-yunc.pantheonsite.io/Avada.zip
+  - wget http://dev-yunc.pantheonsite.io/Impreza.zip
+  - wget http://dev-yunc.pantheonsite.io/lawyer-by-osetin.zip
+  - wget http://dev-yunc.pantheonsite.io/Newspaper.zip
+  - unzip Avada.zip public/wp-content/themes
+  - unzip Impreza.zip public/wp-content/themes
+  - unzip lawyer-by-osetin.zip public/wp-content/themes
+  - unzip Newspaper.zip public/wp-content/themes
+  - unzip businesslounge.zip public/wp-content/themes
+  - unzip waspthemes-yellow-pencil.zip public/wp-content/plugins
+  - rm -rf waspthemes-yellow-pencil.zip
+  - rm -rf businesslounge.zip
+  - rm -rf Avada.zip
+  - rm -rf Impreza.zip
+  - rm -rf lawyer-by-osetin.zip
+  - rm -rf Newspaper.zip
   - git add --all .
   - git commit -m "Travis CI Auto Builder"
   - git checkout -b source
