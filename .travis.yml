@@ -1,39 +1,8 @@
 language: php
 
 php:
-  - 7.2
+  - 7.0
   
 script:
-  - composer config github-oauth.github.com ${CO_TOKEN}
   - composer config secure-http false
   - composer update --ignore-platform-reqs
- 
-after_success:
-  - wget http://dev-yunc.pantheonsite.io/waspthemes-yellow-pencil.zip
-  - wget http://dev-yunc.pantheonsite.io/businesslounge.zip
-  - wget http://dev-yunc.pantheonsite.io/Avada.zip
-  - wget http://dev-yunc.pantheonsite.io/Impreza.zip
-  - wget http://dev-yunc.pantheonsite.io/lawyer-by-osetin.zip
-  - wget http://dev-yunc.pantheonsite.io/Newspaper.zip
-  - unzip Avada.zip -d public/wp-content/themes
-  - unzip Impreza.zip -d public/wp-content/themes
-  - unzip lawyer-by-osetin.zip -d public/wp-content/themes
-  - unzip Newspaper.zip -d public/wp-content/themes
-  - unzip businesslounge.zip -d public/wp-content/themes
-  - unzip waspthemes-yellow-pencil.zip -d public/wp-content/plugins
-  - rm -rf waspthemes-yellow-pencil.zip
-  - rm -rf businesslounge.zip
-  - rm -rf Avada.zip
-  - rm -rf Impreza.zip
-  - rm -rf lawyer-by-osetin.zip
-  - rm -rf Newspaper.zip
-  - git add --all .
-  - git commit -m "Travis CI Auto Builder"
-  - git checkout -b source
-  - git push --quiet --force https://$wordpress@github.com/fydy/heroku.git source
-  - rm -rf .travis.yml
-  - mv travis.yml .travis.yml
-  - git add --all .
-  - git commit -m "Travis CI Auto Builder"
-  - git checkout -b heroku
-  - git push --quiet --force https://$wordpress@github.com/fydy/heroku.git heroku

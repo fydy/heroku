@@ -1,8 +1,0 @@
-language: php
-
-php:
-  - 7.0
-  
-script:
-  - composer config secure-http false
-  - composer update --ignore-platform-reqs
